@@ -1,0 +1,23 @@
+<body>
+    <div class="p-4">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Producto</th>
+            <th>Categoria</th>
+            <th>Precio</th>
+            <th>Unidades Disponibles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>
+              <p>{{product.name}}</p>
+            </td>
+            <td>{{product.id}}</td>
+            <td>{{product.user.name}}</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
